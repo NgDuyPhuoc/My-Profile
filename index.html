@@ -6,71 +6,223 @@
     <title>My Profile</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <script src="main.js"></script>
-    <header>
-        <div class="navbar">
-            <div class="container-nav">
-                <ul class="nav">
-                    <li><a href="#">Trang chủ</a></li>
-                    <li><a href="#">Bản thân tôi</a></li>
-                    <li><a href="#">Học tập</a></li>
-                    <li><a href="#">Kĩ năng</a></li>
-                    <li><a href="#">Liên hệ</a></li>
-                    <div id="item-navbar">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                </ul>
+    <div id="container-navbar">
+        <div id="navbar1-left">
+            NGDUYPHUOC
+        </div>
+        <div id="navbar2-middle">
+            <ul class="nav">
+                <li><a href="#trang-chu">Trang chủ</a></li>
+                <li><a href="#ban-than-toi">Bản thân tôi</a></li>
+                <li><a href="#hoc-van">Học tập</a></li>
+                <li><a href="#ki-nang">Kĩ năng</a></li>
+                <li><a href="#lien-he">Liên hệ</a></li>
+            </ul>
+        </div>
+        <div id="navbar-right">
+            <div id="item-navbar">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
-    </header>
-    <div class="container">
-        <div id="title">
+    </div>
+    <div id="trang-chu" class="profile">
+        <div id="cap">
             <h1>I'm Nguyễn Duy Phước</h1>
-        </div>
-        <div>
-            <img src="avt.jpg" alt="Image" class="profile-avt">
-            <p>Tôi là một lập trình viên web với niềm đam mê sâu sắc đối với việc tạo ra <br>các ứng dụng web độc đáo và chất lượng cao. Với một sự kết hợp giữa sự <br>sáng tạo và kiến thức kỹ thuật vững vàng, tôi luôn tìm kiếm cơ hội để thử <br>thách bản thân và mang lại giá trị đích thực thông qua công việc của mình.</p>
+            <p>Tôi là một lập trình viên web với niềm đam mê sâu sắc đối với việc tạo ra các ứng dụng web độc đáo và chất lượng cao. Với một sự kết hợp giữa sự sáng tạo và kiến thức kỹ thuật vững vàng, tôi luôn tìm kiếm cơ hội để thử thách bản thân và mang lại giá trị đích thực thông qua công việc của mình.</p>
             <div id="button">
                 <button>Download CV <i class="fa-solid fa-download"></i></button>
-                <div id="item">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-tiktok"></i>
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-instagram"></i>
+                <div id="social-link">                
+                    <i id="facebook" class="fa-brands fa-facebook"></i>
+                    <i id="tiktok" class="fa-brands fa-tiktok"></i>
+                    <i id="github" class="fa-brands fa-github"></i>
+                    <i id="instagram" class="fa-brands fa-instagram"></i>
                 </div>
-                <div class="gach"></div>
             </div>
-        </div>    
+        </div>
+        <div id="avatar">
+            <img src="avt.jpg" alt="Profile Avatar" class="profile-avt">
+        </div>
     </div>
-    <div class="content">
-        <img src="img.jpg" alt="Image" class="profile-img">
-        <h1 id="asd">ĐỐI VỚI TÔI</h1>
-        <p id="aaa">"Chuyên môn rất quan trọng, thái độ <br>cũng vậy"</p>
+    <div id="thanh-ngang"></div>
+    <div id="container-box">
+        <div id="ban-than-toi" class="content">
+            <div id="bg-content">
+                <h2>ĐỐI VỚI TÔI</h2>
+                <p id="caption">"Chuyên môn rất quan trọng, thái độ cũng vậy"</p>
+            </div>
+            <div id="image2">
+                <img src="img.jpg" alt="Profile Avatar" class="profile-avt">
+            </div>
+        </div>
+        <div class="dow">
+            <div id="bbb">
+                <div id="dau-gach1"></div>
+                <p>Tôi tin rằng sự sáng tạo và sự đam mê là yếu tố quan trọng trong việc trở thành một lập trình viên web xuất sắc. Với tôi, mỗi dự án là một cơ hội để thể hiện khả năng sáng tạo của mình và tạo ra những điều mới mẻ và độc đáo. Đồng thời tôi cũng sẽ cố gắng thích nghi với môi trường làm việc của doanh nghiệp cùng với sự chuyên nghiệp của mình.</p>
+            </div>
+            <div>
+                <button>Download CV <i class="fa-solid fa-download"></i></button>
+            </div>
+        </div>
+    <div id="thanh-ngang2"></div>
+    <div id="hoc-van" class="education">
+        <h2 id="hocvan">HỌC VẤN</h2>
+        <p id="hocvan-caption">"Học để phát triển, thay đổi để hoàn thiện"</p>
     </div>
-    <div class="bbb">
-        <div id="duong"></div>
-        <p id="ww">Tôi tin rằng sự sáng tạo và sự đam mê là yếu tố quan trọng trong việc <br>trở thành một lập trình viên web xuất sắc. Với tôi, mỗi dự án là một cơ <br>hội để thể hiện khả năng sáng tạo của mình và tạo ra những điều mới <br>mẻ và độc đáo. Đồng thời tôi cũng sẽ cố gắng thích nghi với môi trường <br>làm việc của doanh nghiệp cùng với sự chuyên nghiệp của mình.</p>
+    <div class="bg-education1">
+        <div id="education1">
+            <div id="khung1">2024 - 2029</div>
+            <div id="abt1">ABOUT ME</div>
+            <p>Transforming visions into exceptional portfolios</p>
+            <div id="dau-gach2"></div>
+            <span>Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione</span>
+        </div>
+        <div id="education2">
+            <div id="khung2">2024 - 2029</div>
+            <div id="abt2">ABOUT ME</div>
+            <p>Transforming visions into exceptional portfolios</p>
+            <div id="dau-gach3"></div>
+            <span>Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione</span>
+        </div>
     </div>
-    <div class="ke"></div>
-    <div class="study">
-            <h1>Học vấn</h1>
-            <p>"Học để phát triển, thay đổi để toàn diện"</p>
-    </div>
-    <div id="bg">
-        <div class="hocvan">
-            <form action="">
-                <button class="btn">2024 - 2029</button>
-                <div class="about-me">ABOUT ME</div>
+    <div class="bg-education2">
+            <div id="education3">
+                <div id="khung3">2024 - 2029</div>
+                <div id="abt3">ABOUT ME</div>
                 <p>Transforming visions into exceptional portfolios</p>
-                <div class="--"></div>
-                <span>Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit <br>auting fugit sed thisnquia consequuntur magni dolores eos designer heresm <br>qui ratione</span>
-            </form>   
-        </div>    
+                <div id="dau-gach4"></div>
+                <span>Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione</span>
+            </div>
+            <div id="education4">
+                <div id="khung4">2024 - 2029</div>
+                <div id="abt4">ABOUT ME</div>
+                <p>Transforming visions into exceptional portfolios</p>
+                <div id="dau-gach5"></div>
+                <span>Nemo design enim ipsam voluptatem quim voluptas sit aspernatur aut odit auting fugit sed thisnquia consequuntur magni dolores eos designer heresm qui ratione</span>
+            </div>
     </div>
+    <div id="thanh-ngang3"></div>
+    <div id="ki-nang">KĨ NĂNG</div>
+    <div class="kienthucdahoc">
+        <div class="container-skill">
+            <div id="background-html">
+                <div id="skill-html">
+                        <img id="img-html" src="https://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Other-html-5-icon.png" alt="HTML">
+                        <p>HTML</p>
+                </div>
+            </div>
+            <div id="background-css">
+                <div id="skill-css">
+                    <img id="img-css" src="https://portfolio-phuc2px.vercel.app/static/media/icons8-css-480.8aaf7833370a6845139c.png" alt="CSS">
+                    <p>CSS</p>
+                </div>
+            </div>
+            <div id="background-js">
+                <div id="skill-js">
+                    <img id="img-js" src="https://static.vecteezy.com/system/resources/previews/027/127/463/original/javascript-logo-javascript-icon-transparent-free-png.png" alt="CSS">
+                    <p>JavaScript</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="lien-he" class="container-skill-wrapper">
+        <div class="skill-wrapper">
+            <div id="text-card1">
+                <div id="dau-gach2"></div>
+                <p>Tôi là một người học hỏi tích cực và luôn nỗ lực để nắm vững và phát triển kỹ năng trong lĩnh vực công nghệ thông tin. Trong quá trình học tập và làm việc, tôi đã có cơ hội làm quen và làm việc với một số công nghệ quan trọng như ReactJS, Node.js, MySQL, C#, SQL, Bootstrap, HTML, CSS và JavaScript.</p>
+            </div>
+            <div id="text-card2">
+                <div id="dau-gach3"></div>
+                <p>ReactJS và Node.js là hai công nghệ tôi đã dành nhiều thời gian để hiểu rõ và áp dụng vào các dự án trên trường học và cá nhân.</p>
+            </div>
+            <div id="text-card3">
+                <div id="dau-gach4"></div>
+                <p>Trong khoảng thời gian học tập trên nhà trường tôi đã có cơ hội làm việc nhóm học tập được ngôn ngữ C# ứng dụng làm dự án phần mềm bằng công nghệ .Net (WinForms) kết nối CSDL SQL Server. Trong đó tôi đóng vai trò là người viết mã nguồn chính cho dự án.</p>
+            </div>
+        </div>
+    </div>
+    <div id="thanh-ngang4"></div>
+    <div id="container-lienhe-background">
+        <div id="container-lienhe-wrap">
+            <div id="container-lienhe-box">
+                <div id="bg-text-lienhe">
+                    <div>THAM VỌNG</div>
+                    <P>"Bản lĩnh của một con người được thể hiện qua sự tham vọng và trả giá"</P>
+                </div>
+                <div id="wrap-lienhe">
+                    <form action="">
+                        <h4>Liên hệ với tôi</h4>
+                        <input type="text" id="yourname" placeholder="Your Name">
+                        <input type="text" id="youremail" placeholder="Your Email">
+                        <input type="number" id="yourphone" placeholder="Your Phone">
+                        <button id="guingay">GỬI NGAY</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="background-lienhe-caption">
+        <div id="background-body-card">
+            <div id="body-card">
+                <div id="dau-gach5"></div>
+                <span>Tôi tin rằng sự chuyên nghiệp giúp chúng ta có thể thấu hiểu nhau và tôn trọng nhau, nó giúp chúng ta đi xa hơn trong các dự án làm việc nhóm ở trường học và doanh nghiệp.</span>
+            </div>
+        </div>
+    </div>
+    <div class="background-footer">
+        <div class="body-card-footer">
+            <h6>BẢN THÂN TÔI</h6>
+            <div id="text-card-footer">
+                Tôi là Nguyễn Duy Phước hiện là sinh viên năm nhất Công Nghệ Thông Tin trường Đại Học Trà Vinh, tôi đang cố gắng học tập rèn luyện để trở thành một lập trình viên Web giỏi trong tương lai, tôi sẽ mang theo khát vọng này và cố gắng vương ra biển lớn, dù có khó khăn, dù có vong bão, tôi vẫn sẵn sàng rời bến. Vì ước mơ của một con thuyền là sẽ chinh phục những con sóng hung tợn.
+            </div>
+        </div>
+        <div id="menu-congnghe">
+            <h6>CÔNG NGHỆ</h6>
+            <a href="#ki-nang">HTML</a>
+            <a href="#ki-nang">CSS</a>
+            <a href="#ki-nang">JAVACRIPT</a>
+        </div>
+        <div id="menu-chuyenhuong">
+            <h6>CHUYỂN HƯỚNG</h6>
+            <li>
+                <a href="#trang-chu">Trang chủ</a>
+            </li>
+            <li>
+                <a href="">Dự án</a>
+            </li>
+            <li>
+                <a href="#ban-than-toi">Bản thân</a>
+            </li>
+            <li>
+                <a href="#ki-nang">Kĩ năng</a>
+            </li>
+            <li>
+                <a href="#hoc-van">Học tập</a>
+            </li>
+            <li>
+                <a href="#lien-he">Liên hệ</a>
+            </li>
+        </div>
+    </div>
+    <div class="bg-thanhngang">
+        <div id="thanh-ngang5"></div>
+    </div>
+        <div class="row">
+            <div id="copyright">
+                    <p>Copyright © 2024 All Rights Reserved by Duy Phước.</p>
+            </div>
+            <div id="social-icon">            
+                <i id="fb" class="fa-brands fa-facebook"></i>
+                <i id="tt" class="fa-brands fa-tiktok"></i>
+                <i id="git" class="fa-brands fa-github"></i>
+                <i id="ins" class="fa-brands fa-instagram"></i>
+            </div>
+    </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script src="main.js"></script>
 </body>
 </html>
